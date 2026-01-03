@@ -1,0 +1,94 @@
+[
+    {
+      "id": 1,
+      "question": "Who won the FIFA World Cup in 2018?",
+      "options": ["Brazil", "France", "Germany", "Spain"],
+      "correctAnswer": "France"
+    },
+    {
+      "id": 2,
+      "question":
+        "Which player holds the record for the most goals in the Premier League?",
+      "options": ["Alan Shearer", "Wayne Rooney", "Thierry Henry", "Sergio Agüero"],
+      "correctAnswer": "Alan Shearer"
+    },
+    {
+      "id": 3,
+      "question": "Which country is known as the 'Home of Football'?",
+      "options": ["Brazil", "Italy", "England", "Spain"],
+      "correctAnswer": "England"
+    },
+    {
+      "id": 4,
+      "question":
+        "What is the maximum number of players a football team can have on the field at any time?",
+      "options": ["11", "12", "10", "9"],
+      "correctAnswer": "11"
+    },
+    {
+      "id": 5,
+      "question":
+        "Which team won the UEFA Champions League in 2005 in a dramatic comeback against AC Milan?",
+      "options": ["Liverpool", "Manchester United", "Chelsea", "Barcelona"],
+      "correctAnswer": "Liverpool"
+    },
+    {
+      "id": 6,
+      "question": "Which player is known as 'The King of Football'?",
+      "options": ["Lionel Messi", "Cristiano Ronaldo", "Pele", "Diego Maradona"],
+      "correctAnswer": "Pele"
+    },
+    {
+      "id": 7,
+      "question":
+        "What color card does a referee show to indicate a player is being warned?",
+      "options": ["Red", "Yellow", "Green", "Blue"],
+      "correctAnswer": "Yellow"
+    },
+    {
+      "id": 8,
+      "question": "Which country won the first ever FIFA World Cup in 1930?",
+      "options": ["Uruguay", "Brazil", "Argentina", "Italy"],
+      "correctAnswer": "Uruguay"
+    },
+    {
+      "id": 9,
+      "question": "How long is a standard professional football match?",
+      "options": ["90 minutes", "80 minutes", "100 minutes", "120 minutes"],
+      "correctAnswer": "90 minutes"
+    },
+    {
+      "id": 10,
+      "question": "Which football club is known as 'The Red Devils'?",
+      "options": ["Arsenal", "Liverpool", "Manchester United", "Chelsea"],
+      "correctAnswer": "Manchester United"
+    },
+    {
+      "id": 11,
+      "question": "Who is the only player to have won three European Golden Shoes?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Robert Lewandowski",
+        "Kylian Mbappe"
+      ],
+      "correctAnswer": "Lionel Messi"
+    },
+    {
+      "id": 12,
+      "question": "In which year was the UEFA Champions League founded?",
+      "options": ["1955", "1960", "1970", "1985"],
+      "correctAnswer": "1955"
+    },
+    {
+      "id": 20,
+      "question": "Which player is known for the famous 'bicycle kick'?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Ronaldinho",
+        "Lionel Messi",
+        "Zlatan Ibrahimovic"
+      ],
+      "correctAnswer": "Zlatan Ibrahimovic"
+    }
+  ]

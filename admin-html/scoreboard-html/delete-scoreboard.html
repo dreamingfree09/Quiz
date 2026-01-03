@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Scoreboard Entry - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body class="delete-scoreboard">
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">SCOREBOARD</button>
+        <div class="dropdown-content">
+          <a href="create-scoreboard.html">Create Scoreboard Entry</a>
+          <a href="read-scoreboard.html">View Scoreboard Entry</a>
+          <a href="update-scoreboard.html">Update Scoreboard Entry</a>
+          <a href="delete-scoreboard.html">Delete Scoreboard Entry</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>Delete Scoreboard Entry</h1>
+      <form
+        action="path-to-server-side-script"
+        method="POST"
+        class="delete-scoreboard-form"
+      >
+        <div class="form-group">
+          <label for="scoreboard">Select Scoreboard Entry to Delete:</label>
+          <select id="scoreboard" name="scoreboard" required>
+            <!-- Options should be dynamically populated -->
+            <option value="">Select a Scoreboard</option>
+          </select>
+        </div>
+
+        <button type="submit" class="delete-button">Delete</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

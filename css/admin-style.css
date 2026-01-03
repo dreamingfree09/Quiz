@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+
+:root {
+    --primary-color: #505550; /* Grey */
+    --secondary-color: #ffffff; /* White */
+    --accent-color: #504c4c; /* Grey */
+    --text-color: #5c5a5a; /* Dark gray */
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+/* Sidebar and Dropdown Styles */
+.sidebar {
+    width: 200px; /* Adjust the width as needed */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed; /* Keeps the sidebar fixed to the side */
+    top: 0; /* Aligns to the top */
+    left: 0; /* Aligns to the left */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.sidebar .logo {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.sidebar a.home-btn {
+    font-weight: bold;
+    text-align: center;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.home-btn,
+.dropdown-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.home-btn:hover,
+.dropdown-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    position: absolute; /* Needed for correct positioning */
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 5px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--accent-color);
+}
+
+S .sidebar nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.delete-quiz select {
+    width: 100%; /* Full width of the container */
+    padding: 8px; /* Padding for better appearance */
+    margin-bottom: 10px; /* Spacing between the select and the button */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light grey border */
+}
+
+.delete-quiz label {
+    display: block; /* Ensures the label is on its own line */
+    margin-bottom: 5px; /* Spacing between label and select box */
+}
+
+.delete-quiz button {
+    background-color: #d9534f; /* Red color for delete button */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-quiz button:hover {
+    background-color: #c9302c; /* Slightly darker shade of red for hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Keeps the footer at the bottom */
+    bottom: 0; /* Aligns to the bottom of the viewport */
+    left: 0; /* Aligns to the left of the viewport */
+    width: 100%; /* Ensures the footer spans the entire width */
+    z-index: 1000; /* Ensures the footer stays on top of other elements */
+}
+
+/* Main Content Styles */
+main {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 220px; /* Should be equal or greater than the width of the sidebar */
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+/* Form Styles */
+.form-quiz,
+.delete-quiz,
+.form-user,
+.update-user,
+.create-scoreboard,
+.read-scoreboard,
+.delete-scoreboard {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="submit"],
+.form-group select,
+.form-user input[type="text"],
+.form-user input[type="email"],
+.form-user input[type="password"],
+.form-user input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="submit"],
+.form-user input[type="submit"] {
+    background-color: #004d99;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover,
+.form-user input[type="submit"]:hover {
+    background-color: #003366;
+}
+
+/* Table Styles */
+.scoreboard-table,
+.quiz-table,
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.scoreboard-table th,
+.scoreboard-table td,
+.quiz-table th,
+.quiz-table td,
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.scoreboard-table th,
+.quiz-table th,
+.user-table th {
+    background-color: #004d99;
+    color: white;
+}
+
+.scoreboard-table tr:nth-child(even),
+.quiz-table tr:nth-child(even),
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.scoreboard-table tr:hover,
+.quiz-table tr:hover,
+.user-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Pagination Styles */
+.scoreboard-pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+.scoreboard-pagination a {
+    color: #333;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    background-color: white;
+}
+
+.scoreboard-pagination a:hover {
+    background-color: #eaeaea;
+}
+
+.submit-button {
+    background-color: #004d99; /* Primary button color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+    margin-top: 15px; /* Spacing above the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #003366; /* Slightly darker shade for hover effect */
+}
+
+.delete-button {
+    background-color: #d9534f; /* Red color for delete button */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.delete-button:hover {
+    background-color: #c9302c; /* Slightly darker shade of red for hover effect */
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .scoreboard-table,
+    .quiz-table,
+    .user-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

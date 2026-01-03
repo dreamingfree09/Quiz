@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Users - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+
+      <!-- User Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">USER</button>
+        <div class="dropdown-content">
+          <a href="create-user.html">Create User</a>
+          <a href="read-user.html">View Users</a>
+          <a href="update-user.html">Update User</a>
+          <a href="delete-user.html">Delete User</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>View Users</h1>
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <!-- Add more columns if necessary -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example Row - Static Data -->
+          <tr>
+            <td>john_doe</td>
+            <td>johndoe@example.com</td>
+          </tr>
+          <!-- Additional rows will be dynamically generated -->
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

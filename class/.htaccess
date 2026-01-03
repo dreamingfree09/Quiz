@@ -1,0 +1,7 @@
+# Apache .htaccess
+
+Options -Indexes
+
+<FilesMatch "^(db_connect|action)\.php$">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Quiz - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+
+      <!-- Quiz Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">QUIZ</button>
+        <div class="dropdown-content">
+          <a href="create-quiz.html">Create Quiz</a>
+          <a href="read-quiz.html">View Quizzes</a>
+          <a href="update-quiz.html">Update Quiz</a>
+          <a href="delete-quiz.html">Delete Quiz</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>Update Quiz Question</h1>
+      <div class="select-question">
+        <label for="selectQuestion">Select Question:</label>
+        <select id="selectQuestion" name="selectQuestion">
+          <option value="question1">Who won the FIFA World Cup in 2018?</option>
+          <!-- Other options will be dynamically populated -->
+        </select>
+      </div>
+      <form action="path-to-server-side-script" method="post" class="form-quiz">
+        <div class="form-group">
+          <label for="question">Question:</label>
+          <input
+            type="text"
+            id="question"
+            name="question"
+            value="Who won the FIFA World Cup in 2018?"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="optionA">Option A:</label>
+          <input
+            type="text"
+            id="optionA"
+            name="optionA"
+            value="A) Brazil"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="optionB">Option B:</label>
+          <input
+            type="text"
+            id="optionB"
+            name="optionB"
+            value="B) France"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="optionC">Option C:</label>
+          <input
+            type="text"
+            id="optionC"
+            name="optionC"
+            value="C) Germany"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="optionD">Option D:</label>
+          <input
+            type="text"
+            id="optionD"
+            name="optionD"
+            value="D) Spain"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="correctAnswer">Correct Answer:</label>
+          <select id="correctAnswer" name="correctAnswer" required>
+            <option value="A">A</option>
+            <option value="B" selected>B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

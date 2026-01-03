@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Football Quiz</title>
+    <link rel="stylesheet" href="../css/admin-style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="admin-index.html" class="home-btn">Home</a>
+
+      <!-- Quiz Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">QUIZ</button>
+        <div class="dropdown-content">
+          <a href="./quiz-html/create-quiz.html">Create Quiz</a>
+          <a href="./quiz-html/read-quiz.html">View Quizzes</a>
+          <a href="./quiz-html/update-quiz.html">Update Quiz</a>
+          <a href="./quiz-html/delete-quiz.html">Delete Quiz</a>
+        </div>
+      </div>
+
+      <!-- User Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">USER</button>
+        <div class="dropdown-content">
+          <a href="./user-html/create-user.html">Create User</a>
+          <a href="./user-html/read-user.html">View Users</a>
+          <a href="./user-html/update-user.html">Update User</a>
+          <a href="./user-html/delete-user.html">Delete User</a>
+        </div>
+      </div>
+
+      <!-- Scoreboard Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">SCOREBOARD</button>
+        <div class="dropdown-content">
+          <a href="./scoreboard-html/create-scoreboard.html"
+            >Create Scoreboard Entry</a
+          >
+          <a href="./scoreboard-html/read-scoreboard.html">View Scoreboard</a>
+          <a href="./scoreboard-html/update-scoreboard.html"
+            >Update Scoreboard</a
+          >
+          <a href="./scoreboard-html/delete-scoreboard.html"
+            >Delete Scoreboard Entry</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>Dashboard</h1>
+      <!-- Main content goes here -->
+    </main>
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="../js/admin-script.js"></script>
+  </body>
+</html>

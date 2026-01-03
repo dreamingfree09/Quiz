@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Quiz - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+
+      <!-- Quiz Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">QUIZ</button>
+        <div class="dropdown-content">
+          <a href="create-quiz.html">Create Quiz</a>
+          <a href="read-quiz.html">View Quizzes</a>
+          <a href="update-quiz.html">Update Quiz</a>
+          <a href="delete-quiz.html">Delete Quiz</a>
+        </div>
+      </div>
+
+      <!-- Other dropdowns for User and Scoreboard -->
+    </div>
+
+    <main>
+      <h1>Create New Quiz Question</h1>
+      <form action="path-to-server-side-script" method="post" class="form-quiz">
+        <div class="form-group">
+          <label for="question">Question:</label>
+          <input type="text" id="question" name="question" required />
+        </div>
+        <div class="form-group">
+          <label for="optionA">Option A:</label>
+          <input type="text" id="optionA" name="optionA" required />
+        </div>
+        <div class="form-group">
+          <label for="optionB">Option B:</label>
+          <input type="text" id="optionB" name="optionB" required />
+        </div>
+        <div class="form-group">
+          <label for="optionC">Option C:</label>
+          <input type="text" id="optionC" name="optionC" required />
+        </div>
+        <div class="form-group">
+          <label for="optionD">Option D:</label>
+          <input type="text" id="optionD" name="optionD" required />
+        </div>
+        <div class="form-group">
+          <label for="correctAnswer">Correct Answer:</label>
+          <select id="correctAnswer" name="correctAnswer" required>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

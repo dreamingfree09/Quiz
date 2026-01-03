@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create User - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+
+      <!-- User Admin Dropdown -->
+      <div class="dropdown">
+        <button class="dropdown-btn">USER</button>
+        <div class="dropdown-content">
+          <a href="create-user.html">Create User</a>
+          <a href="read-user.html">View Users</a>
+          <a href="update-user.html">Update User</a>
+          <a href="delete-user.html">Delete User</a>
+        </div>
+      </div>
+
+      <!-- Additional navigation items for Scoreboard, etc. -->
+    </div>
+
+    <main>
+      <h1>Create New User</h1>
+      <form action="path-to-server-side-script" method="post" class="form-user">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Create User" />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

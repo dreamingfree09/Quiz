@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Scoreboard - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body class="create-scoreboard">
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">SCOREBOARD</button>
+        <div class="dropdown-content">
+          <a href="create-scoreboard.html">Create scoreboard</a>
+          <a href="read-scoreboard.html">View scoreboard</a>
+          <a href="update-scoreboard.html">Update scoreboard</a>
+          <a href="delete-scoreboard.html">Delete scoreboard</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>Create New Scoreboard</h1>
+      <form
+        action="path-to-server-side-script"
+        method="post"
+        class="form-scoreboard"
+      >
+        <div class="form-group">
+          <label for="scoreboard-name">Scoreboard Name:</label>
+          <input
+            type="text"
+            id="scoreboard-name"
+            name="scoreboard-name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="scoreboard-description">Scoreboard Description:</label>
+          <textarea
+            id="scoreboard-description"
+            name="scoreboard-description"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Create Scoreboard" />
+        </div>
+      </form>
+
+      <h2>Scoreboard List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>95</td>
+            <td>2023-06-15</td>
+          </tr>
+          <!-- Add more rows for other users -->
+        </tbody>
+      </table>
+
+      <div class="scoreboard-pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <!-- Add more pagination links -->
+      </div>
+    </main>
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

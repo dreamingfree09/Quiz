@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read Scoreboard - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../css/admin-style.css" />
+  </head>
+  <body class="read-scoreboard">
+    <div class="sidebar">
+      <a href="../admin-index.html" class="home-btn">Home</a>
+      <div class="dropdown">
+        <button class="dropdown-btn">SCOREBOARD</button>
+        <div class="dropdown-content">
+          <a href="create-scoreboard.html">Create scoreboard</a>
+          <a href="read-scoreboard.html">View scoreboard</a>
+          <a href="update-scoreboard.html">Update scoreboard</a>
+          <a href="delete-scoreboard.html">Delete scoreboard</a>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1>Scoreboard List</h1>
+      <table class="scoreboard-table">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>95</td>
+            <td>2023-06-15</td>
+          </tr>
+          <!-- Add more rows for other users -->
+        </tbody>
+      </table>
+
+      <div class="scoreboard-pagination">
+        <!-- Generate pagination links dynamically based on the number of scoreboard entries -->
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentYear"></span> Football Quiz</p>
+    </footer>
+    <script src="/js/admin-script.js"></script>
+  </body>
+</html>

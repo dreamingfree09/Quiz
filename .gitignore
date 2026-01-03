@@ -1,0 +1,27 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# PHP built-in server logs (local)
+.php-server.*.log
+
+# Common logs
+*.log
+error_log
+**/error_log
+
+# Local env files
+.env
+.env.*
+
+# Node (if ever used)
+node_modules/
+
+# Composer (if ever used)
+/vendor/
+composer.phar
