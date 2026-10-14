@@ -117,3 +117,7 @@ and responds with:
 - Change/remove the default admin credentials from the sample SQL dumps.
 
 See `DEPLOYMENT.md` for step-by-step deployment (including Proxmox) and local performance testing.
+
+## Collaboration workflow
+
+Start with [continuity](Docs/CONTINUITY.md) for verified revisions and active work, [GHP-01](Docs/GHP-01.md) for branch publication and independent review, and [agent instructions](AGENTS.md) for execution boundaries. The existing setup and deployment guidance above is retained. Workflow installation does not establish fresh application or security-test results.

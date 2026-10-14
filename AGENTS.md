@@ -1,0 +1,11 @@
+# Quiz agent instructions
+
+The Project Owner and Aether own planning, architecture and significant approvals. The existing Codex worker implements authorised assignments and publishes evidence for independent review. Start at README.md, Docs/CONTINUITY.md and Docs/GHP-01.md. Preserve DEPLOYMENT.md and existing setup instructions.
+
+Work only in the authorised Quiz checkout. Verify its actual path, local branch, working tree and existing remote before mutation; the path in DEPLOYMENT.md is historical guidance, not proof of the active checkout. Preserve all local work, Git history and repository visibility. Do not access unrelated projects or publish credentials, real user data or production database dumps. Existing sample SQL is outside this documentation task's edit scope.
+
+Use unique work IDs, separate producer-owned branches and one writer per file. No additional agent or orchestration service is required. The worker owns routine testing, Git publication and evidence collection through authorised tools. Routine normal commits and pushes within approved scope require no repeated approval. Integration into main requires explicit exact-revision authorisation. No force pushes, history rewriting, branch deletion or remote changes are authorised.
+
+Publish the complete handover in an owned PR description or one producer record. Include exact base/final SHA, file scope, approval, actual validation, limitations, acknowledgement and integration state. Read back the remote revision and published contents before reporting completion. CODEX DONE triggers Aether's independent GitHub review; it does not itself approve integration.
+
+For documentation-only changes, verify complete diff, parents, relative links, conflict markers, whitespace and remote readback. Do not run or claim application tests unnecessarily. For PHP changes, run php -l on changed PHP sources in the configured PHP environment and appropriate behaviour checks with a disposable test database. Syntax checks alone do not establish runtime or security correctness. Browser/DB changes require relevant login, quiz, scoreboard or admin checks. Do not alter a live database, deploy publicly or change server configuration without corresponding task authorisation. Record unavailable PHP/MySQL/browser facilities as limitations rather than passes.
